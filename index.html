@@ -1,1 +1,77 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <script src="./App.js" defer></script>
+</head>
+
+<body>
+
+    <!-------------- Navbar sevtion ----------->
+    <nav>
+        <h1>Meal Planner</h1>
+    </nav>
+
+    <!---------------- Input section ------------->
+    <div class="input-section">
+        <div class="input-1">
+            <div>
+                <input type="number" min="0" placeholder="Height in cm" class="height" required>
+            </div>
+            <div>
+                <input type="number" min="0" placeholder="Weight in KG" class="weight" required>
+            </div>
+            <div>
+                <input type="number" min="0" placeholder="Age in Year" class="age" required>
+            </div>
+        </div>
+        <div class="input-2">
+            <div class="gender-section">
+                <select class="gender">
+                    <option>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="activity-level-section">
+            <select class="activity">
+                <option>Activity level</option>
+                <option value="light">Light</option>
+                <option value="moderate">Moderate</option>
+                <option value="active">Active</option>
+            </select>
+            </div>
+        </div>
+        <button class="generate-meal-btn">Generate Meal</button>
+    </div>
+
+    <!-- -------------- Meal card section  -------->
+    <section class="meal-section">
+        <h2>Breakfast</h2>
+        <h2>Lunch</h2>
+        <h2>Dinner</h2>
+      </section>
+      <!-- main -->
+      <div class="card">
+        <div class="meal-card"></div>
+      </div>
+
+      <!-- ------------- Recipe section -------------->
+    <section class="recipe-section">
+        <div class="background">
+            <div class="dish">
+              <span class="ingredients"> </span>
+              <span class="equipments"> </span>
+            </div>
+            <aside class="steps"></aside>
+          </div>
+    </section>
+</body>
+</html>
