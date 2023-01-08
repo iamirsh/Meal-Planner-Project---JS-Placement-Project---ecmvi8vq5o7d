@@ -1,1 +1,254 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+}
+/*-------------- Navbar section------------------- */
+nav {
+  background-color: #EE624F;
+  color: rgb(237, 230, 230);
+  font-size: larger;
+  font-family: 'Poppins', cursive;
+  padding: 7px;
+  text-align: center;
+}
+
+h3 {
+  font-weight: normal;
+  width: 300px;
+  border-radius: 0 0 0.5rem 0.5rem;
+  padding-bottom: 5px;
+}
+/*--------------------Navbar section end ---------------*/
+
+/* -------------------Input section ------------------- */
+
+input {
+  border: none;
+  background-color: rgb(222, 216, 229);
+  padding: 0.5rem;
+  border-radius: 0.7rem;
+  outline: none;
+  width: 11rem;
+  text-align: center;
+}
+
+option,select,input{
+  font-size: medium;
+  font-weight: normal;
+}
+
+option {
+  text-align: center;
+}
+
+select {
+  outline: none;
+}
+
+.heading {
+  color: #E3E2DF;
+  text-align: center;
+  font-weight: normal;
+  font-family: 'Poppins';
+  margin: 10px;
+}
+
+.input-section {
+  text-align: center;
+  font-family: 'Poppins';
+  margin-bottom: 0;
+}
+
+.input-1 {
+  margin: 25px;
+}
+
+.input-1,.input-2 ,.meal-section,.meal-card{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.generate-meal-btn {
+  margin: 5px 0px 17px 0px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  font-size: large;
+  background-color: #EE624F;
+  color: #E3E2DF;
+}
+.generate-meal-btn:hover {
+  color: #867e65;
+  background-color: #eac597;
+  outline: none;
+}
+
+.gender,
+.activity {
+  border: none;
+  background-color: rgb(222, 216, 229);
+  padding: 8px;
+  border-radius: 0.7rem;
+  outline: none;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  background-color: #EE624F;
+  border: 1px solid white;
+  color: #E3E2DF;
+  border: none;
+  border-radius: 10px;
+  margin-top: 3%;
+  padding: 8px 15px;
+  margin-bottom: 4%;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.8s;
+  font-size: medium;
+}
+
+button:hover {
+  background-color: #f6825b;
+  color: #515151;
+}
+/* -------------------Input section end ----------------------- */
+
+/* --------------------- Card section ------------------------- */
+
+.meal-section h2 {
+  color: #EE624F;
+}
+
+.meal-card {
+  margin: 20px 50px;
+}
+
+.meal-card span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: normal;
+  border-radius: 12px;
+  text-align: center;
+  margin: 10px 20px 40px 20px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.meal-card span:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.meal-card span h3 {
+  margin: 10px 0;
+}
+
+.meal-card span img {
+  border-radius: 50%;
+  max-width: 200px;
+  height: 180px;
+}
+
+.meal-card span button {
+  margin-top: auto;
+}
+
+.meal-card span button:focus {
+  color: #f6825b;
+  border: 1px solid #f6825b;
+  background-color: #ffffff;
+}
+
+
+/* --------------------- Card section end ------------------- */
+
+
+/* ---------------------- Ingredients section -------------- */
+
+.equipment h2,
+.ingrediants h2 {
+  margin: 0;
+}
+
+.dish {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 30px;
+}
+
+.ingrediants,
+.equipments {
+  margin: 30px;
+  width: 400px;
+  padding: 20px;
+}
+
+.steps {
+  padding: 20px;
+  margin: 0 30px;
+}
+
+.recipe-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+
+  width: 80%;
+  padding: 50px;
+  /* background-color: rgb(222, 216, 229); */
+  color: black;
+  font-size: 20px;
+  margin: auto;
+}
+
+.recipe-section h2 {
+  margin: 0 20px 20px 20px;
+  color: #f6825b;
+}
+/* ---------------------- Ingredients section --------------------- */
+
+
+/*--------------- Media Query for Mobile Devices -------------------*/
+
+@media only screen and (max-width: 600px) {
+  .meal-card,.input-1,.input-2,.dish {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .meal-card {
+    align-items: center;
+  }
+
+  .meal-section {
+    visibility: hidden;
+  }
+
+  .input-1,.input-2,.dish {
+    justify-content: center;
+  }
+
+  input,select,span{
+    margin: 5px;
+  }
+}
