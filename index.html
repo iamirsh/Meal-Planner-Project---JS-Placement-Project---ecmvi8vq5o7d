@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,70 +7,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meal Planner</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <script src="./App.js" defer></script>
 </head>
 
 <body>
-
-    <!-------------- Navbar sevtion ----------->
     <nav>
         <h1>Meal Planner</h1>
     </nav>
-
-    <!---------------- Input section ------------->
     <div class="input-section">
         <div class="input-1">
             <div>
-                <input type="number" min="0" placeholder="Height in cm" class="height" required>
+                <label class="height-label">Height :</label>
+                <input type="number" min="100" max="250" placeholder="cms" class="height" required>
             </div>
             <div>
-                <input type="number" min="0" placeholder="Weight in KG" class="weight" required>
+                <label class="weight-label">Weight :</label>
+                <input type="number" min="30" max="200" placeholder="kgs" class="weight" required>
             </div>
             <div>
-                <input type="number" min="0" placeholder="Age in Year" class="age" required>
+                <label class="age-label">Age :</label>
+                <input type="number" min="14" max="120" placeholder="years" class="age" required>
             </div>
         </div>
         <div class="input-2">
             <div class="gender-section">
+                <label>Gender :</label>
                 <select class="gender">
-                    <option>Gender</option>
                     <option value="male">Male</option>
                     <option value="female">Female</option>
                 </select>
             </div>
             <div class="activity-level-section">
-            <select class="activity">
-                <option>Activity level</option>
-                <option value="light">Light</option>
-                <option value="moderate">Moderate</option>
-                <option value="active">Active</option>
-            </select>
+                <label>Activity level :</label>
+                <select class="activity">
+                    <option value="light">Light</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="active">Active</option>
+                </select>
             </div>
         </div>
-        <button class="generate-meal-btn">Generate Meal</button>
+        <button type="button" class="generate-meal-btn">Generate Meal</button>
     </div>
-
-    <!-- -------------- Meal card section  -------->
     <section class="meal-section">
         <h2>Breakfast</h2>
         <h2>Lunch</h2>
         <h2>Dinner</h2>
-      </section>
-      <!-- main -->
-      <div class="card">
+    </section>
+    <div class="card">
+        <div class="dummy-card">
+            <div>
+                <img src="https://media.istockphoto.com/id/1141120666/photo/healhy-breakfast-toast-with-avocado-egg.jpg?s=612x612&w=0&k=20&c=WSr6b-oo9Qd-npEfozFi_PS9DtA8yyKL5Unp0bY4O-I="
+                    alt="Breakfast Image">
+                <h3>Tost with Avocado Egg</h3>
+                <button>Get Recipe</button>
+            </div>
+            <div>
+                <img src="https://media.gettyimages.com/id/1318039979/photo/tray-with-samosa-dumplings-vegetable-salad-and-bowl-of-chili-sauce.jpg?s=612x612&w=0&k=20&c=JVHSObS_tC1g2MIIUi_5qA46xd0yXnWa4ncQ9sbgGqA="
+                    alt="Lunch Image">
+                <h3>Samosa Dumplings with Vegetable Salad</h3>
+                <button>Get Recipe</button>
+            </div>
+            <div>
+                <img src="https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="Dinner Image">
+                <h3>Italian Pasta</h3>
+                <button>Get Recipe</button>
+            </div>
+        </div>
         <div class="meal-card"></div>
-      </div>
-
-      <!-- ------------- Recipe section -------------->
+    </div>
     <section class="recipe-section">
         <div class="background">
             <div class="dish">
-              <span class="ingredients"> </span>
-              <span class="equipments"> </span>
+                <span class="ingredients"> </span>
+                <span class="equipments"> </span>
             </div>
             <aside class="steps"></aside>
-          </div>
+        </div>
     </section>
+    <!-- ---------Footer section ------ -->
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Meal<span>Planner</span></h3>
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">About</a>
+                |
+                <a href="#">Contact</a>
+                |
+                <a href="#">Blog</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2022 <strong>Irshad Ahmad</strong> All rights reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Ghaziabad</span>
+                    Delhi</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 9450687541</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:mealplanner.co@gmail.com">Mealplanner@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span>
+                <strong>Meal Planner</strong> gives you the daily meals with their respective recipes according to the
+                user's physical data and activities
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>
